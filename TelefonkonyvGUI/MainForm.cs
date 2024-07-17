@@ -23,7 +23,8 @@ namespace TelefonkonyvGUI {
 
         private void btnList_Click(object sender, EventArgs e)
         {
-            throw new System.NotImplementedException();
+            ListForm form = new ListForm();
+            form.ShowDialog();
         }
 
         private void btnSearch_Click(object sender, EventArgs e)

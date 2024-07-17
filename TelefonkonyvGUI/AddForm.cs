@@ -16,14 +16,14 @@ namespace TelefonkonyvGUI {
             using (FileStream fs = new FileStream("project.dat", FileMode.Append, FileAccess.Write))
             using (BinaryWriter writer = new BinaryWriter(fs))
             {
-                writer.Write(p.name);
-                writer.Write(p.address);
-                writer.Write(p.father_name);
-                writer.Write(p.mother_name);
-                writer.Write(p.mobile_no);
-                writer.Write(p.sex);
-                writer.Write(p.email);
-                writer.Write(p.citizen_no);
+                writer.Write(p.Name);
+                writer.Write(p.Address);
+                writer.Write(p.FatherName);
+                writer.Write(p.MotherName);
+                writer.Write(p.MobileNo);
+                writer.Write(p.Sex);
+                writer.Write(p.Email);
+                writer.Write(p.CitizenNo);
             }
             Close();
         }
